@@ -6,7 +6,7 @@ This project has 2 parts:
 
 ### first part
 In this part, we have developed a directed weighted graph consisting of nodes (vertices) and edges.
-**classes**
+#### classes
 * **NodeData:**
 This class represents a single node (by implementing the interface 'node_data'). Node is consisting of id and position, and some extra information about it.
 * **EdgeData:**
@@ -19,7 +19,7 @@ This class consists of algorithms that are run on a directed weighted graph (by 
 ### second part
 This part is focusing on the Pokemon game, whose goal is for the "agents" to eat as many Pokemons as possible in as little time and steps as possible.
 The game runs on a directed-weighted graph. The agents were programmed with an algorithm (which uses Dijkstra) to find the shortest path to achieving a high score.
-**classes**
+#### classes
 * **json_to_graph:**
 Parses a JSON file graph "to DWGraph_DS" class graph.
 * **json_to_graphGame:**
