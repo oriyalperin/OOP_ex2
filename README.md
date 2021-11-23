@@ -45,8 +45,8 @@ The game objects in visual elements: graph, Pokemons, Agents.
 Updates once at a time the Agent's data changes  (value and speed).
 * **Ex2:**
 Used for running the game: visual and logical.
-•Login to the game and choose a level (1-22)
-•Algorithm that matches between Agent and Pokemon.
+ 1. Login to the game and choose a level (1-22)
+ 2. Algorithm that matches between Agent and Pokemon.
  The algorithm idea:
   1. calculate the distances of the shortest paths between each agent and pokemon (account for the agent speed).
   2. match between the shortest distance agent and the Pokemon of all the (agent, pokemon) couples.
