@@ -7,43 +7,43 @@ This project has 2 parts:
 ### first part
 In this part, we have developed a directed weighted graph consisting of nodes (vertices) and edges.
 **classes**
-* **NodeData**
+* **NodeData:**
 This class represents a single node (by implementing the interface 'node_data'). Node is consisting of id and position, and some extra information about it.
-* **EdgeData**
+* **EdgeData:**
 This class represents a single Edge (by implementing the interface 'edge_data'). Edge is consisting of two nodes- source node and destination node (because the graph is directed), and weight (because the graph is weighted), and some extra information about it.
-* **DWgraph_DS**
+* **DWgraph_DS:**
 This class represents a directed weighted graph (by implementing the interface 'directed_weighted_graph'). The graph consists of nodes list and edges list.
-* **DWGraph_Algo**
+* **DWGraph_Algo:**
 This class consists of algorithms that are run on a directed weighted graph (by implementing the interface 'dw_graph_algorithms'), such as DFS- to determine if the graph is strongly connected, Dijkstra- to find the shortest path. In addition, there are JSON methods - for saving and loading graphs, and init & copy methods.
 
 ### second part
 This part is focusing on the Pokemon game, whose goal is for the "agents" to eat as many Pokemons as possible in as little time and steps as possible.
 The game runs on a directed-weighted graph. The agents were programmed with an algorithm (which uses Dijkstra) to find the shortest path to achieving a high score.
 **classes**
-* **json_to_graph**
+* **json_to_graph:**
 Parses a JSON file graph "to DWGraph_DS" class graph.
-* **json_to_graphGame**
+* **json_to_graphGame:**
 Parses a json file graph to "directed_weighted_graph" class graph.
-* **connected**
+* **connected:**
 In "isConnected" function we need to store extra data about the vertices.
 This class saves this data.
-* **CL_Pokemon**
+* **CL_Pokemon:**
 Represents the Pokemon object.
 Each Pokemon has a position, the edge it is on, and value (points it's worth).
 The Pokemon main use in the game is its position. The position will help us to find the closest agent to "eat" the Pokemon. 
-* **CL_Agent**
+* **CL_Agent:**
 Represents Agent object.
 Each Agent has a position, speed level(which can grow), and value (score).
 The Agent's main use in the game is its position and speed. Those will help us to calculate the distances between it and the Pokemons,
 and then to find the ideal Pokemon that it should "eat" to earn points as much as possible in as little time and steps as possible.
-* **Arena**
+* **Arena:**
 Most Arena class functions are used for converting the outputs (JSON strings) that the game server is returning and parsing them to objects (like Pokemons list, Agents list, the graph itself..)
 In addition, updates for each Pokemon the current edge it is on.
-* **MyFrame**
+* **MyFrame:**
 Used for GUI.
 The game objects in visual elements: graph, Pokemons, Agents.
 Updates once at a time the Agent's data changes  (value and speed).
-* **Ex2**
+* **Ex2:**
 Used for running the game: visual and logical.
 •Login to the game and choose a level (1-22)
 •Algorithm that matches between Agent and Pokemon.
